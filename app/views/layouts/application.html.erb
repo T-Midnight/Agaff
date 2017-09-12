@@ -1,14 +1,38 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Agaff</title>
+    <title><%= content_for?(:title) ? yield(:title) : "Agapoff" %></title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application' %>
     <%= csrf_meta_tags %>
-
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
-    <%= yield %>
+
+    <%= render 'layouts/header' %>
+    <div class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+    </div>
+
+    </div>
+    <%= bootstrap_flash %>
+    <div class="container">
+      <% flash.each do |key, value| %>
+          <div class="alert alert-error <%= key %>"><%= value %></div>
+        <% end %>
+      <%= yield %>
+    </div>
+
+    <div>
+      <%= debug(params) if Rails.env.development? %>
+      <%=render 'layouts/footer' %>
+    </div>
+
+
   </body>
 </html>
