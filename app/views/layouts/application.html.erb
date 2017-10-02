@@ -1,9 +1,8 @@
 <!DOCTYPE html5>
 <html lang="en">
   <head>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">﻿
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="javascript" href="application.js">﻿
     <%= stylesheet_link_tag "application", media: "all",
                                            "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -11,20 +10,41 @@
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
     
     <%= stylesheet_link_tag "css/custom" %>
+    <%= stylesheet_link_tag "css/bootstrap" %>
+    <%= stylesheet_link_tag "css/reset" %>
   </head>
   <body>
-    <div class = "container">
-      <div class = "row header_row">
-         <div class = ".col-lg-12 col-md-12 col-sm-12 col-xs-12"> </div>
+    <div class="container">
+      <div class="row header">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 "> 
+	<%= link_to root_url do %>
+ 	  <%= image_tag('logo_min(1).png', alt: 'Logo') %>
+	<% end %>
+	</div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"> 
+	  <p class="contacts"> 
+	    <em><strong>телефон: 8 (927) 631-57-87</em></strong> <br>
+	    <em><strong>Агапов Андрей</em> </strong>
+	  </p> 
+	</div>
+      </div>       
+    </div>   
+    <div class="container_my container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 class1"> 
+	  <h1> C </h1>
+	</div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 class2"> 
+	  <h1> C </h1>
+	</div>
       </div>         
     </div>  
-    <div class = "container_my">
-      <div class = "row">
-         <div class = ".col-lg-5 col-md-5 col-sm-5 col-xs-5 class1"> </div>
-         <div class = ".col-lg-5 col-md-5  col-sm-5 col-xs-5 class2"> </div>
+    <div class="container-fluid">
+      <div class="row quote">
+         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 foto_circle"> </div>
+         <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 quote"> </div>
       </div>         
     </div>    
   </body>
