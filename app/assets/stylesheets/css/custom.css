@@ -2,7 +2,6 @@
 
 .header{
 	background: gray;
-	
 	padding: 5px 0;
 	margin: auto;
 	max-width:100% !important;
@@ -25,11 +24,44 @@
 	text-align: center;
 	padding: 15px 15px;
 }
-.quote {
-	background-color: green;
-	height:250px;
 
+.col-xs-12 .col-lg-6 .col-md-6 .col-sm-12 {
+	position: relative;
+  	min-height: 1px;
+  	padding-left: 15px;
+  	padding-right: 15px;
 }
-em {
 
+.photo {
+   	display: inline-block;
+  	vertical-align: middle;
+   	height: 70%;
+	margin: 30px 0 15px 15px;
+}
+
+row {
+	vertical-align: middle;
+}
+
+.quote {
+	vertical-align: middle;
+height: 250px;
+background: #F5F5F5;
+}
+
+.widgets .float-left {
+    	margin: 0 10px 0 7px;
+	background: gray;
+}
+
+.float-left {
+    	float: left;
+}
+#footer {
+    padding: 8px 0;
+    margin: 15px 0 45px 0;
+}
+
+#footer {
+    clear: both;
 }
