@@ -45,8 +45,20 @@
   background: #F5F5F5;
 }
 
+.D {
+	font-size: 250px;
+ 	color: black; 
+	text-align:center;
+	margin: 20px;
 
 
+}
+.C {
+	font-size: 250px;
+ 	color: white; 
+	text-align:center;
+	margin: 20px;
+}
 
 
 .footer {
