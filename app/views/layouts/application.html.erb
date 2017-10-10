@@ -40,12 +40,57 @@
 	  <h1> C </h1>
 	</div>
       </div>         
-    </div>  
+    </div> 
     <div class="container-fluid">
+      <div id="map">
+	<script>
+          function initMap() {
+            var uluru = {lat: 54.3818383, lng: 48.603934};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 11,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+        </script>
+        <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_l7KHRj8SKlF9VcH7nPe_4UXA2xW61RI&callback=initMap">
+        </script>
+      </div>
+    </div>
+
+
+    <div class="container-fluid">			
+      <div class="footer row">
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+	  <p class="copyright">© 2013-2017 «Agapoff Studio» </p>
+	</div>
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 logo">
+	  <%= image_tag('logo_min(1).png', alt: 'Logo') %>
+	</div>
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+	  <div class="widgets">
+	    <a class="instagram_icon" target="_blank" href="https://www.instagram.com/agapoffstudio/">
+	      <%= image_tag('sprite.png', alt: 'Instagram') %>
+	    </a>
+	    <a class="vk_icon" target="_blank" href="https://vk.com/agapoffstudio"> 
+	      
+	    </a>
+	</div>
+      </div>
+    </div>
+
+    <!--<div class="container-fluid">
       <div class="row quote">
          <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 foto_circle"> </div>
          <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 quote"> </div>
       </div>         
     </div>    
+    </div> 
+
+-->   
   </body>
 </html>
