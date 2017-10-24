@@ -14,15 +14,12 @@
     <%= stylesheet_link_tag "css/custom" %>
     <%= stylesheet_link_tag "css/bootstrap" %>
     <%= stylesheet_link_tag "css/reset" %>
-    <%= stylesheet_link_tag "css/sprite" %>
   </head>
   <body>
     <div class="container-fluid">
       <div class="row header">
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 "> 
-	<%= link_to root_url do %>
  	  <%= image_tag('logo_min(1).png', alt: 'Logo') %>
-	<% end %>
 	</div>
         <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"> 
 	  <p class="contacts"> 
@@ -42,6 +39,14 @@
 	</div>
       </div>         
     </div> 
+
+
+
+
+
+
+
+
     <div class="container-fluid">
       <div class="row"> 
         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 photo">
@@ -78,7 +83,7 @@
           function initMap() {
             var coordinates = {lat: 54.3818383, lng: 48.603934};
             var map = new google.maps.Map(document.getElementById('map'), {
-              zoom: 12,
+              zoom: 13,
               center: coordinates,
 	      styles: [
 		  {
@@ -245,13 +250,11 @@
 	    var marker = new google.maps.Marker({
               position: coordinates,
               map: map
-	    });
-	    
-	    
+	    });    
 	  }
         </script>
         <script async defer
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_l7KHRj8SKlF9VcH7nPe_4UXA2xW61RI&callback=initMap">
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_l7KHRj8SKlF9VcH7nPe_4UXA2xW61RI&language=ru&region=RU&callback=initMap">
         </script>
       </div>
     </div>
@@ -264,15 +267,20 @@
 	  <%= image_tag('logo_min(1).png', alt: 'Logo') %>
 	</div>
 	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-	  <div class="widgets">
-	    <a class="instagram_icon" target="_blank" href="https://www.instagram.com/agapoffstudio/">
-	      <%= image_tag('sprite.png', alt: 'Instagram') %>
-	    </a>
-	    <a class="vk_icon" target="_blank" href="https://vk.com/agapoffstudio"> 
-	      
-	    </a>
-	</div>
-      </div>   
+	  <div class="row widgets col-lg-12 col-md-12 col-sm-12 col-xs-12">
+	       <a class="instagram_icon" target="_blank" href="https://www.instagram.com/agapoffstudio/">
+	          <%= image_tag('insta resize.png', alt: 'Instagram') %>
+	      </a>
+		<a class="vk_icon" target="_blank" href="https://vk.com/agapoffstudio"> 
+	          <%= image_tag('vk resize.png', alt: 'VKontakte') %>
+	      </a>
+		<a class="pinterest_icon" target="_blank" href="https://www.behance.net/AndrewAgapoff"> 
+	          <%= image_tag('Behance resize.png', alt: 'Behance') %>
+	      </a>
+	    </div>
+	  </div>
+        </div>   
+      </div>  
     </div>   
   </body>
 </html>
