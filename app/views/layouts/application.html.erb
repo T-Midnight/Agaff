@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="javascript" href="application.js">﻿
+    <script type="text/javascript" src="wikiquote-api.js"></script>
     <%= stylesheet_link_tag "application", media: "all",
                                            "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -13,7 +14,9 @@
     
     <%= stylesheet_link_tag "css/custom" %>
     <%= stylesheet_link_tag "css/bootstrap" %>
-    <%= stylesheet_link_tag "css/reset" %>
+   <!-- <%= stylesheet_link_tag "css/reset" %>-->
+    <title> Agapoff Studio</title>
+    <meta charset=UTF-8">
   </head>
   <body>
     <div class="container-fluid">
@@ -54,8 +57,9 @@
         </div>
         <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
           <blockquote>
-	    <p>ghfhhfghfgggggggggggggggggggggggg</p>
-  	      <footer><cite>Андрей Агапов</cite> </footer>
+	    <p>Я директор компании AgapoffStudio
+  	      - Андрей Агапов 
+	    </p>
           </blockquote>
         </div>
       </div>
@@ -263,7 +267,7 @@
 	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 	  <p class="copyright">© 2013-2017 «Agapoff Studio» </p>
 	</div>
-	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 logo">
+	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 logo img-responsive">
 	  <%= image_tag('logo_min(1).png', alt: 'Logo') %>
 	</div>
 	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
