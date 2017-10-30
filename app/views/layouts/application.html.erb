@@ -3,7 +3,6 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="javascript" href="application.js">﻿
-    <script type="text/javascript" src="wikiquote-api.js"></script>
     <%= stylesheet_link_tag "application", media: "all",
                                            "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -11,10 +10,10 @@
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    
+    <%= stylesheet_link_tag "css/reset" %>
     <%= stylesheet_link_tag "css/custom" %>
     <%= stylesheet_link_tag "css/bootstrap" %>
-   <!-- <%= stylesheet_link_tag "css/reset" %>-->
+   
     <title> Agapoff Studio</title>
     <meta charset=UTF-8">
   </head>
@@ -52,14 +51,14 @@
 
     <div class="container-fluid">
       <div class="row"> 
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 photo">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 photo img-responsive">
 	  <%= image_tag('Andrew.jpg', alt: 'Andrew Agapov') %>
         </div>
-        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 quote">
           <blockquote>
-	    <p>Я директор компании AgapoffStudio
-  	      - Андрей Агапов 
+	    <p>Я Андрей Агапов, занимаюсь 3д моделированием, у меня есть своя компания, и я пишу много текста, для того чтобы верстальщик мог проверить свою верстку. 
 	    </p>
+	    <footer><cite>Андрей Агапов</cite></footer>
           </blockquote>
         </div>
       </div>
