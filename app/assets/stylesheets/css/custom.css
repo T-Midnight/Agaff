@@ -115,12 +115,10 @@ html, body {
 
 blockquote {
 	background: white;
-	border-top: 5px solid #EAF9F9;
-	border-bottom: 5px solid #EAF9F9;
 	color: #3A3C55;
-	padding: 30px 30px 30px 90px;
 	position: relative;
 	font-weight: 300;
+	
 }
 blockquote:before {
 	content: "\201C";
@@ -148,4 +146,7 @@ footer {
 }
 blockquote cite{
 	font-style: italic;
+}
+.quote {
+	margin-top: 100px;
 }
