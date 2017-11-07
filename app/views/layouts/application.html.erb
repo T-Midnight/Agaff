@@ -40,7 +40,8 @@
 	  <p span class="Digital"> DIGITAL </p>
 	</div>
       </div>         
-    </div> 
+    </div>
+    <br> 
 
 
 
@@ -50,13 +51,13 @@
 
 
     <div class="container-fluid">
-      <div class="row"> 
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 photo img-responsive">
+      <div class="row quote"> 
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 img-responsive photo">
 	  <%= image_tag('Andrew.jpg', alt: 'Andrew Agapov') %>
         </div>
-        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 quote">
+        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 ter">
           <blockquote>
-	    <p>Я Андрей Агапов, занимаюсь 3д моделированием, у меня есть своя компания, и я пишу много текста, для того чтобы верстальщик мог проверить свою верстку. 
+	    <p>ТЕОРИЯ - ЭТО КОГДА ВЫ ЗНАЕТЕ ВСЁ, НО НИЧЕГО НЕ РАБОТАЕТ. ПРАКТИКА - ЭТО КОГДА ВСЕ РАБОТАЕТ, НО НИКТО НЕ ЗНАЕТ ПОЧЕМУ. МЫ СОВМЕЩАЕМ ТЕОРИЮ И ПРАКТИКУ - НИЧЕГО НЕ РАБОТАЕТ И НИКТО НЕ ЗНАЕТ ПОЧЕМУ.
 	    </p>
 	    <footer><cite>Андрей Агапов</cite></footer>
           </blockquote>
@@ -65,10 +66,46 @@
     </div>
 
 
-
-    <div id="company" class="about-wrapper">
+<div id="company" class="about-wrapper">
       <h1 class="">
-        Наши партнёры
+        НАША КОМПАНИЯ
+      </h1>
+      <div class="container">
+          <article class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <%= image_tag('Gazprom.svg', alt: 'Газпром') %>
+	    <p>
+		Высококвалифицированная команда и новейшие технологии позволяют нам создавать мебель в кратчайшие сроки.
+	    </p><p>
+	    </p>
+          </article>
+          <article class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <%= image_tag('Gazprom.svg', alt: 'Kinder') %>
+	    <p>
+		Инновационный дизайн мебели Фабрики «Добрый стиль» удостоен дипломов Всероссийских и международных выставок и конкурсов.
+	    </p><p>
+	    </p>
+          </article>
+          <article class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <%= image_tag('Gazprom.svg', alt: 'Nutella') %>
+            <p>
+		Высококвалифицированная команда и новейшие технологии позволяют нам создавать мебель в кратчайшие сроки.
+	    </p><p>
+	    </p>
+	  </article>
+          <article class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+            <%= image_tag('Gazprom.svg', alt: 'Sony') %>
+	    <p>
+		Инновационный дизайн мебели Фабрики «Добрый стиль» удостоен дипломов Всероссийских и международных выставок и конкурсов.
+	    </p><p>
+	    </p>
+	  </article>
+       </div>
+     </div>
+
+
+    <div id="clients" class="clients-wrapper">
+      <h1 class="">
+        НАШИ КЛИЕНТЫ
       </h1>
       <div class="container">
 	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
