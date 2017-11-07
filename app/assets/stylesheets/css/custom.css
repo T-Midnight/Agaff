@@ -193,3 +193,20 @@ blockquote cite{
 .about-wrapper section p {
   	padding: 10px 0 0 0;
 }
+
+
+
+.form-wrapper {
+	background: #330066;
+	color:  #fff;
+	padding: 1em 0;
+ 	/* hide horizontal scrollbar on IE11 */
+  	overflow-x: hidden;
+	box-shadow: 0 5px 10px -1px rgba(0, 0, 0, 0.5);
+} 
+.form-wrapper h1{ 
+	font-size: 2.5em;
+	text-align: center;
+	padding-bottom: 20px;
+} 
+
