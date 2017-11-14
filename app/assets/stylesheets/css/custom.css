@@ -15,29 +15,42 @@
 	font-style: normal;
 }	
 html, body {
-    	height: 100%;
-   	margin: 0;
-    	padding: 0;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 	min-width: 300px;
 }
 * html {
-    	height: 100%;
+	height: 100%;
 }
 .header{
-	background: gray;
+	background: #1a1616;
 	padding: 5px 0;
 	margin: auto;
 	height: auto;
 }
+.header p {
+	color: white;
+	font-size: 20px;
+}
+.lid {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.phones{
+	text-align: center;
+}
+
 .class1 {
 	background-image: url('/assets/fon_for_web.jpg');
-	height: 400px;
-   	box-shadow: 0 5px 10px -1px rgba(0, 0, 0, 0.5);
+	height: 300px;
+	box-shadow: 0 5px 10px -1px rgba(0, 0, 0, 0.5);
 }
 .class2 {
 	background: white;
-	height: 400px;
-    	box-shadow: 0 5px 10px -1px rgba(0, 0, 0, 0.5);
+	height: 300px;
+	box-shadow: 0 5px 10px -1px rgba(0, 0, 0, 0.5);
 }
 
 .contacts {
@@ -49,17 +62,17 @@ html, body {
 
 .Digital {
 	font-size: 80px;
- 	color: black; 
-	text-align:center;
-	margin: 20px;
+	color: black; 
+	text-align: center;
+	margin: 70px 20px 20px 20px;
 
 
 }
 .Web {
 	font-size: 80px;
- 	color: white; 
+	color: white; 
 	text-align:center;
-	margin: 20px;
+	margin: 70px 20px 20px 20px;
 }
 
 #map {
@@ -73,7 +86,7 @@ html, body {
 
 
 .footer {
-  	padding: 8px 0;
+	padding: 8px 0;
 	margin: 15px 0 35px 0;
 	height: auto;
 	background: #696969;
@@ -89,8 +102,8 @@ html, body {
 .logo {
 	max-width: 100%;
 	max-height: 100%;
-    	justify-content: center;
- 	display: flex;
+	justify-content: center;
+	display: flex;
 	margin: 10px 0 10px 0;
 }
 
@@ -114,8 +127,6 @@ html, body {
 	color: #3A3C55;
 	position: relative;
 	font-weight: 300;
-	border-left: hidden;
-	
 }
 .blockquote:before {
 	content: "\201C";
@@ -131,15 +142,13 @@ html, body {
 	font-size: 50px;
 	line-height: 1.35;
 	text-align: center;
-	border-left: none;
 }
 .blockquote p {
 	margin: 20px 70px 16px;
 	font-size: 22px;
 	letter-spacing: .05em;
 	line-height: 1.4;
-border-left: none;
-padding: 20px 0 0 20px;
+	padding: 20px 0 0 20px;
 }
 
 .blockquote cite{
@@ -152,9 +161,9 @@ padding: 20px 0 0 20px;
 
 /*c сайта доброго стиля*/
 .clients-wrapper {
- 	padding: 1em 0;
- 	/* hide horizontal scrollbar on IE11 */
-  	overflow-x: hidden;
+	padding: 1em 0;
+	/* hide horizontal scrollbar on IE11 */
+	overflow-x: hidden;
 }
 
 .clients-wrapper h1{ 
@@ -165,22 +174,22 @@ padding: 20px 0 0 20px;
 } 
 
 .clients-wrapper img {
-  margin: 1em;
+	margin: 1em;
 }
 
 .clients-wrapper section p {
-  padding: 10px 0 0 0;
+	padding: 10px 0 0 0;
 }
 
 
 
 
 .about-wrapper {
-  	background: #565656;
-  	color: #fff;
-  	padding: 1em 0;
- 	 /* hide horizontal scrollbar on IE11 */
-  	overflow-x: hidden;
+	background: #565656;
+	color: #fff;
+	padding: 1em 0;
+	/* hide horizontal scrollbar on IE11 */
+	overflow-x: hidden;
 	box-shadow: 0 5px 10px -1px rgba(0, 0, 0, 0.5);
 }
 
@@ -191,11 +200,11 @@ padding: 20px 0 0 20px;
 } 
 
 .about-wrapper img {
-  	margin: 1em;
+	margin: 1em;
 }
 
 .about-wrapper section p {
-  	padding: 10px 0 0 0;
+	padding: 10px 0 0 0;
 }
 
 
@@ -204,8 +213,8 @@ padding: 20px 0 0 20px;
 	background: #330066;
 	color:  #fff;
 	padding: 1em 0;
- 	/* hide horizontal scrollbar on IE11 */
-  	overflow-x: hidden;
+	/* hide horizontal scrollbar on IE11 */
+	overflow-x: hidden;
 	box-shadow: 0 5px 10px -1px rgba(0, 0, 0, 0.5);
 } 
 .form-wrapper h1{ 
@@ -214,3 +223,23 @@ padding: 20px 0 0 20px;
 	padding-bottom: 20px;
 } 
 
+
+/*Это размер md*/
+@media all and (min-width: 992px) {
+	.lid {
+		margin-top: 15px;
+	} 
+	.phones{
+		text-align: right;
+	}
+}
+
+/*Это размер sm*/
+@media all and (min-width: 769px) { 
+	.lid {
+		margin-top: 10px;
+	} 
+	.phones{
+		text-align: right;
+	}
+}

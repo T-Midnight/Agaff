@@ -1,364 +1,376 @@
 <!DOCTYPE html5>
 <html lang="en">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="javascript" href="application.js">﻿
-    <%= stylesheet_link_tag "application", media: "all",
-                                           "data-turbolinks-track" => true %>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-    <%= csrf_meta_tags %>
-    <!--[if lt IE 9]>
-    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <%= stylesheet_link_tag "css/reset" %>
-    <%= stylesheet_link_tag "css/custom" %>
-    <%= stylesheet_link_tag "css/bootstrap" %>
-   
-    <title> Agapoff Studio</title>
-    <meta charset=UTF-8">
-  </head>
-  <body>
-    <div class="container-fluid">
-      <div class="row header">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 "> 
- 	  <%= image_tag('logo_min(1).png', alt: 'Logo') %>
-	</div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12"> 
-	  <p class="contacts"> 
-	    <em><strong>телефон: 8 (927) 631-57-87</em></strong> <br>
-	    <em><strong>Агапов Андрей</em> </strong>
-	  </p> 
-	</div>
-      </div>       
-    </div>   
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 class1"> 
-	  <p span class="Web"> WEB </p>
-	</div>
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 class2"> 
-	  <p span class="Digital"> DIGITAL </p>
-	</div>
-      </div>         
-    </div>
-    <div class="container-fluid">
-      <div class="row quote"> 
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 img-responsive photo">
-	  <%= image_tag('Andrew.jpg', alt: 'Andrew Agapov') %>
-        </div>
-        <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 ter">
-          <div class="blockquote">
-	    <p>ТЕОРИЯ — ЭТО КОГДА ВЫ ЗНАЕТЕ ВСЁ, НО НИЧЕГО НЕ РАБОТАЕТ. ПРАКТИКА - ЭТО КОГДА ВСЕ РАБОТАЕТ, НО НИКТО НЕ ЗНАЕТ ПОЧЕМУ. МЫ СОВМЕЩАЕМ ТЕОРИЮ И ПРАКТИКУ - НИЧЕГО НЕ РАБОТАЕТ И НИКТО НЕ ЗНАЕТ ПОЧЕМУ.
-	    </p>
-	    <footer><cite>— Андрей Агапов</cite></footer>
-          </div>
-        </div>
-      </div>
-    </div>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="javascript" href="application.js">﻿
+		<%= stylesheet_link_tag "application", media: "all","data-turbolinks-track" => true %>
+		<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+		<%= csrf_meta_tags %>
+	    <!--[if lt IE 9]>
+	    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	    <![endif]-->
+	    <%= stylesheet_link_tag "css/reset" %>
+	    <%= stylesheet_link_tag "css/custom" %>
+	    <%= stylesheet_link_tag "css/bootstrap" %>
+
+	    <title> Agapoff Studio</title>
+	    <meta charset=UTF-8">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row header">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 "> 
+					<%= image_tag('logo_min(1).png', alt: 'Logo') %>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 "> 
+					<p class="lid"> 
+						МЫ СДЕЛАЕМ ВАМ КРАСИВО 
+					</p>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12"> 
+					<p class="phones"> 
+						75 71 78 <br>
+						8 (927) 631 57 87 
+					</p> 
+				</div>
+			</div>       
+		</div>   
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 class1"> 
+					<p span class="Web"> WEB </p>
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 class2"> 
+					<p span class="Digital"> DIGITAL </p>
+				</div>
+			</div>         
+		</div>
+		<div class="container-fluid">
+			<div class="row quote"> 
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 img-responsive photo">
+					<%= image_tag('Andrew.jpg', alt: 'Andrew Agapov') %>
+				</div>
+				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 ter">
+					<div class="blockquote">
+						<p>ТЕОРИЯ — ЭТО КОГДА ВЫ ЗНАЕТЕ ВСЁ, НО НИЧЕГО НЕ РАБОТАЕТ. ПРАКТИКА - ЭТО КОГДА ВСЕ РАБОТАЕТ, НО НИКТО НЕ ЗНАЕТ ПОЧЕМУ. МЫ СОВМЕЩАЕМ ТЕОРИЮ И ПРАКТИКУ - НИЧЕГО НЕ РАБОТАЕТ И НИКТО НЕ ЗНАЕТ ПОЧЕМУ.
+						</p>
+						<cite>— Андрей Агапов</cite>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
-<div id="company" class="about-wrapper">
-      <h1 class="">
-        НАША КОМПАНИЯ
-      </h1>
-      <div class="container">
-          <article class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <%= image_tag('Gazprom.svg', alt: 'Газпром') %>
-	    <p>
-		Высококвалифицированная команда и новейшие технологии позволяют нам создавать мебель в кратчайшие сроки.
-	    </p><p>
-	    </p>
-          </article>
-          <article class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <%= image_tag('Gazprom.svg', alt: 'Kinder') %>
-	    <p>
-		Инновационный дизайн мебели Фабрики «Добрый стиль» удостоен дипломов Всероссийских и международных выставок и конкурсов.
-	    </p><p>
-	    </p>
-          </article>
-          <article class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <%= image_tag('Gazprom.svg', alt: 'Nutella') %>
-            <p>
-		Высококвалифицированная команда и новейшие технологии позволяют нам создавать мебель в кратчайшие сроки.
-	    </p><p>
-	    </p>
-	  </article>
-          <article class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-            <%= image_tag('Gazprom.svg', alt: 'Sony') %>
-	    <p>
-		Инновационный дизайн мебели Фабрики «Добрый стиль» удостоен дипломов Всероссийских и международных выставок и конкурсов.
-	    </p><p>
-	    </p>
-	  </article>
-       </div>
-     </div>
-
-
-
-    <div id="form" class="form-wrapper">
-      <h1>
-	ОСТАВИТЬ ЗАЯВКУ
-      </h1>
-    </div>
+		<div id="company" class="about-wrapper">
+			<h1 class="">
+				НАША КОМПАНИЯ
+			</h1>
+			<div class="container">
+				<article class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<%= image_tag('Gazprom.svg', alt: 'Газпром') %>
+					<p>
+						Высококвалифицированная команда и новейшие технологии позволяют нам создавать мебель в кратчайшие сроки.
+					</p><p>
+				</p>
+				</article>
+				<article class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<%= image_tag('Gazprom.svg', alt: 'Kinder') %>
+					<p>
+						Инновационный дизайн мебели Фабрики «Добрый стиль» удостоен дипломов Всероссийских и международных выставок и конкурсов.
+					</p><p>
+					</p>
+				</article>
+				<article class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<%= image_tag('Gazprom.svg', alt: 'Nutella') %>
+					<p>
+						Высококвалифицированная команда и новейшие технологии позволяют нам создавать мебель в кратчайшие сроки.
+					</p><p>
+					</p>
+				</article>
+				<article class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+					<%= image_tag('Gazprom.svg', alt: 'Sony') %>
+					<p>
+						Инновационный дизайн мебели Фабрики «Добрый стиль» удостоен дипломов Всероссийских и международных выставок и конкурсов.
+					</p><p>
+					</p>
+				</article>
+			</div>
+		</div>
 
 
 
-
-
-    <div id="clients" class="clients-wrapper">
-      <h1 class="">
-        НАШИ КЛИЕНТЫ
-      </h1>
-      <div class="container">
-	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <article class="col-lg-4 col-md-4 col-sm-4 col-xs-4 img-responsive">
-            <%= image_tag('Gazprom.svg', alt: 'Газпром') %>
-          </article>
-          <article class="col-lg-4 col-md-4 col-sm-4 col-xs-4 img-responsive">
-            <%= image_tag('Gazprom.svg', alt: 'Kinder') %>
-          </article>
-          <article class="col-lg-4 col-md-4 col-sm-4 col-xs-4 img-responsive">
-            <%= image_tag('Gazprom.svg', alt: 'Nutella') %>
-	  </article>
-        </div>
-	<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-          <article class="col-lg-4 col-md-4 col-sm-4 col-xs-4 img-responsive">
-            <%= image_tag('Gazprom.svg', alt: 'Sony') %>
-	  </article>
-          <article class="col-lg-4 col-md-4 col-sm-4 col-xs-4 img-responsive">
-            <%= image_tag('Gazprom.svg', alt: 'Kinder') %>
-          </article>
-          <article class="col-lg-4 col-md-4 col-sm-4 col-xs-4 img-responsive">
-            <%= image_tag('Gazprom.svg', alt: 'Kinder') %>
-          </article>
-        </div>
-      </div>
-    </div>
-
-   
-
-     
+		<div id="form" class="form-wrapper">
+			<h1>
+				ОСТАВИТЬ ЗАЯВКУ
+			</h1>
+		</div>
 
 
 
 
 
-
-
-
-
-
-
+		<div id="clients" class="clients-wrapper">
+			<h1 class="">
+				НАШИ КЛИЕНТЫ
+			</h1>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<article class="col-lg-3 col-md-3 col-sm-3 col-xs-12 img-responsive">
+							<%= image_tag('kinder.jpg', alt: 'Kinder') %>
+						</article>
+						<article class="col-lg-3 col-md-3 col-sm-3 col-xs-12 img-responsive">
+							<%= image_tag('gulliver.jpg', alt: 'Gulliver') %>
+						</article>
+						<article class="col-lg-3 col-md-3 col-sm-3 col-xs-12 img-responsive">
+							<%= image_tag('Gazprom.svg', alt: 'Gazprom') %>
+						</article>
+						<article class="col-lg-3 col-md-3 col-sm-3 col-xs-12 img-responsive">
+							<%= image_tag('volga_dnepr.png', alt: 'Волга-Днепр') %>
+						</article>
+					</div>
+					<div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+						<article class="col-lg-3 col-md-3 col-sm-3 col-xs-12 img-responsive">
+							<%= image_tag('akva.jpg', alt: 'Аквамолл') %>
+						</article>
+						<article class="col-lg-3 col-md-3 col-sm-3 col-xs-12 img-responsive">
+							<%= image_tag('dobryi_stil.png', alt: 'Добрый стиль') %>
+						</article>
+						<article class="col-lg-3 col-md-3 col-sm-3 col-xs-12 img-responsive">
+							<%= image_tag('dvery.jpg', alt: 'Александрийские двери') %>
+						</article>
+						<article class="col-lg-3 col-md-3 col-sm-3 col-xs-12 img-responsive">
+							<%= image_tag('just.jpg', alt: 'Just.ru') %>
+						</article>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
 
 
 
 
-    <div class="container-fluid">
-      <div id="map">
-	<script>
-          function initMap() {
-            var coordinates = {lat: 54.3818383, lng: 48.603934};
-            var map = new google.maps.Map(document.getElementById('map'), {
-              zoom: 13,
-              center: coordinates,
-	      styles: [
-		  {
-		    "elementType": "geometry",
-		    "stylers": [
-		      {
-			"color": "#242f3e"
-		      }
-		    ]
-		  },
-		  {
-		    "elementType": "labels.text.fill",
-		    "stylers": [
-		      {
-			"color": "#746855"
-		      }
-		    ]
-		  },
-		  {
-		    "elementType": "labels.text.stroke",
-		    "stylers": [
-		      {
-			"color": "#242f3e"
-		      }
-		    ]
-		  },
-		  {
-		    "featureType": "administrative.locality",
-		    "elementType": "labels.text.fill",
-		    "stylers": [
-		      {
-			"color": "#d59563"
-		      }
-		    ]
-		  },
-		  {
-		    "featureType": "poi",
-		    "elementType": "labels.text.fill",
-		    "stylers": [
-		      {
-			"color": "#d59563"
-		      }
-		    ]
-		  },
-		  {
-		    "featureType": "poi.park",
-		    "elementType": "geometry",
-		    "stylers": [
-		      {
-			"color": "#263c3f"
-		      }
-		    ]
-		  },
-		  {
-		    "featureType": "poi.park",
-		    "elementType": "labels.text.fill",
-		    "stylers": [
-		      {
-			"color": "#6b9a76"
-		      }
-		    ]
-		  },
-		  {
-		    "featureType": "road",
-		    "elementType": "geometry",
-		    "stylers": [
-		      {
-			"color": "#38414e"
-		      }
-		    ]
-		  },
-		  {
-		    "featureType": "road",
-		    "elementType": "geometry.stroke",
-		    "stylers": [
-		      {
-			"color": "#212a37"
-		      }
-		    ]
-		  },
-		  {
-		    "featureType": "road",
-		    "elementType": "labels.text.fill",
-		    "stylers": [
-		      {
-			"color": "#9ca5b3"
-		      }
-		    ]
-		  },
-		  {
-		    "featureType": "road.highway",
-		    "elementType": "geometry",
-		    "stylers": [
-		      {
-			"color": "#746855"
-		      }
-		    ]
-		  },
-		  {
-		    "featureType": "road.highway",
-		    "elementType": "geometry.stroke",
-		    "stylers": [
-		      {
-			"color": "#1f2835"
-		      }
-		    ]
-		  },
-		  {
-		    "featureType": "road.highway",
-		    "elementType": "labels.text.fill",
-		    "stylers": [
-		      {
-			"color": "#f3d19c"
-		      }
-		    ]
-		  },
-		  {
-		    "featureType": "transit",
-		    "elementType": "geometry",
-		    "stylers": [
-		      {
-			"color": "#2f3948"
-		      }
-		    ]
-		  },
-		  {
-		    "featureType": "transit.station",
-		    "elementType": "labels.text.fill",
-		    "stylers": [
-		      {
-			"color": "#d59563"
-		      }
-		    ]
-		  },
-		  {
-		    "featureType": "water",
-		    "elementType": "geometry",
-		    "stylers": [
-		      {
-			"color": "#17263c"
-		      }
-		    ]
-		  },
-		  {
-		    "featureType": "water",
-		    "elementType": "labels.text.fill",
-		    "stylers": [
-		      {
-			"color": "#515c6d"
-		      }
-		    ]
-		  },
-		  {
-		    "featureType": "water",
-		    "elementType": "labels.text.stroke",
-		    "stylers": [
-		      {
-			"color": "#17263c"
-		      }
-		    ]
-		  }
-		]
-	    });
-	    var marker = new google.maps.Marker({
-              position: coordinates,
-              map: map
-	    });    
-	  }
-        </script>
-        <script async defer
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_l7KHRj8SKlF9VcH7nPe_4UXA2xW61RI&language=ru&region=RU&callback=initMap">
-        </script>
-      </div>
-    </div>
-    <div class="container-fluid">			
-      <div class="footer row">
-	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-	  <p class="copyright">© 2013-2017 «Agapoff Studio» </p>
-	</div>
-	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 logo img-responsive">
-	  <%= image_tag('logo_min(1).png', alt: 'Logo') %>
-	</div>
-	<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-	  <div class="row widgets col-lg-12 col-md-12 col-sm-12 col-xs-12">
-	       <a class="instagram_icon" target="_blank" href="https://www.instagram.com/agapoffstudio/">
-	          <%= image_tag('insta resize.png', alt: 'Instagram') %>
-	      </a>
-		<a class="vk_icon" target="_blank" href="https://vk.com/agapoffstudio"> 
-	          <%= image_tag('vk resize.png', alt: 'VKontakte') %>
-	      </a>
-		<a class="pinterest_icon" target="_blank" href="https://www.behance.net/AndrewAgapoff"> 
-	          <%= image_tag('Behance resize.png', alt: 'Behance') %>
-	      </a>
-	    </div>
-	  </div>
-        </div>   
-      </div>  
-    </div>   
-  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<div class="container-fluid">
+			<div id="map">
+				<script>
+					function initMap() {
+					var coordinates = {lat: 54.3818383, lng: 48.603934};
+					var map = new google.maps.Map(document.getElementById('map'), {
+					zoom: 13,
+					center: coordinates,
+					styles: [
+					{
+						"elementType": "geometry",
+						"stylers": [
+						{
+						"color": "#242f3e"
+					}
+					]
+					},
+					{
+						"elementType": "labels.text.fill",
+						"stylers": [
+						{
+						"color": "#746855"
+					}
+					]
+					},
+					{
+						"elementType": "labels.text.stroke",
+						"stylers": [
+						{
+						"color": "#242f3e"
+					}
+					]
+					},
+					{
+						"featureType": "administrative.locality",
+						"elementType": "labels.text.fill",
+						"stylers": [
+						{
+						"color": "#d59563"
+					}
+					]
+					},
+					{
+						"featureType": "poi",
+						"elementType": "labels.text.fill",
+						"stylers": [
+						{
+						"color": "#d59563"
+					}
+					]
+					},
+					{
+						"featureType": "poi.park",
+						"elementType": "geometry",
+						"stylers": [
+						{
+						"color": "#263c3f"
+					}
+					]
+					},
+					{
+						"featureType": "poi.park",
+						"elementType": "labels.text.fill",
+						"stylers": [
+						{
+						"color": "#6b9a76"
+					}
+					]
+					},
+					{
+						"featureType": "road",
+						"elementType": "geometry",
+						"stylers": [
+						{
+						"color": "#38414e"
+					}
+					]
+					},
+					{
+						"featureType": "road",
+						"elementType": "geometry.stroke",
+						"stylers": [
+						{
+						"color": "#212a37"
+					}
+					]
+					},
+					{
+						"featureType": "road",
+						"elementType": "labels.text.fill",
+						"stylers": [
+						{
+						"color": "#9ca5b3"
+					}
+					]
+					},
+					{
+						"featureType": "road.highway",
+						"elementType": "geometry",
+						"stylers": [
+						{
+						"color": "#746855"
+					}
+					]
+					},
+					{
+						"featureType": "road.highway",
+						"elementType": "geometry.stroke",
+						"stylers": [
+						{
+						"color": "#1f2835"
+					}
+					]
+					},
+					{
+						"featureType": "road.highway",
+						"elementType": "labels.text.fill",
+						"stylers": [
+						{
+						"color": "#f3d19c"
+					}
+					]
+					},
+					{
+						"featureType": "transit",
+						"elementType": "geometry",
+						"stylers": [
+						{
+						"color": "#2f3948"
+					}
+					]
+					},
+					{
+						"featureType": "transit.station",
+						"elementType": "labels.text.fill",
+						"stylers": [
+						{
+						"color": "#d59563"
+					}
+					]
+					},
+					{
+						"featureType": "water",
+						"elementType": "geometry",
+						"stylers": [
+						{
+						"color": "#17263c"
+					}
+					]
+					},
+					{
+						"featureType": "water",
+						"elementType": "labels.text.fill",
+						"stylers": [
+						{
+						"color": "#515c6d"
+					}
+					]
+					},
+					{
+						"featureType": "water",
+						"elementType": "labels.text.stroke",
+						"stylers": [
+						{
+						"color": "#17263c"
+					}
+					]
+					}
+					]
+					});
+					var marker = new google.maps.Marker({
+						position: coordinates,
+						map: map
+					});    
+					}
+				</script>
+				<script async defer
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB_l7KHRj8SKlF9VcH7nPe_4UXA2xW61RI&language=ru&region=RU&callback=initMap">
+				</script>
+			</div>
+		</div>
+
+		<div class="container-fluid">			
+			<div class="footer row">
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<p class="copyright">© 2013-2017 «Agapoff Studio» </p>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 logo img-responsive">
+					<%= image_tag('logo_min(1).png', alt: 'Logo') %>
+				</div>
+				<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+					<div class="row widgets col-lg-12 col-md-12 col-sm-12 col-xs-12">
+						<a class="instagram_icon" target="_blank" href="https://www.instagram.com/agapoffstudio/">
+							<%= image_tag('insta resize.png', alt: 'Instagram') %>
+						</a>
+						<a class="vk_icon" target="_blank" href="https://vk.com/agapoffstudio"> 
+							<%= image_tag('vk resize.png', alt: 'VKontakte') %>
+						</a>
+						<a class="pinterest_icon" target="_blank" href="https://www.behance.net/AndrewAgapoff"> 
+							<%= image_tag('Behance resize.png', alt: 'Behance') %>
+						</a>
+					</div>
+				</div>
+			</div>   
+		</div>  
+	</body>
 </html>
