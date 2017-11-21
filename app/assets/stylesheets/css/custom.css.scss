@@ -28,11 +28,12 @@ html, body {
 	padding: 5px 0;
 	margin: auto;
 	height: auto;
+	p {
+		color: white;
+		font-size: 20px;
+	}
 }
-.header p {
-	color: white;
-	font-size: 20px;
-}
+
 .lid {
 	text-align: center;
 	margin-top: 20px;
@@ -58,18 +59,15 @@ html, body {
 	text-align: center;
 }
 
-
-
 .Digital {
 	font-size: 80px;
 	color: black; 
 	text-align: center;
 	margin: 70px 20px 20px 20px;
-}
-
-.Digital:hover {
-	color: gray; 
-	text-decoration: none;
+	&:hover {
+		color: gray; 
+		text-decoration: none;
+	}
 }
 
 .Web {
@@ -77,11 +75,10 @@ html, body {
 	color: white; 
 	text-align:center;
 	margin: 70px 20px 20px 20px;
-}
-
-.Web:hover {
-	color: gray; 
-	text-decoration: none;
+	&:hover {
+		color: gray; 
+		text-decoration: none;
+	}
 }
 
 #map {
@@ -90,9 +87,6 @@ html, body {
 	margin-right: -15px;
 	box-shadow: 0 5px 10px -1px rgba(0, 0, 0, 0.5);
 }
-
-
-
 
 .footer {
 	padding: 8px 0;
@@ -136,62 +130,52 @@ html, body {
 	color: #3A3C55;
 	position: relative;
 	font-weight: 300;
-}
-.blockquote:before {
-	content: "\201C";
-	font-family: serif;
-	position: absolute;
-	left: 20px;
-	top: 20px;
-	color: white;
-	background: gray;
-	width: 50px;
-	height: 50px;
-	border-radius: 50%;
-	font-size: 50px;
-	line-height: 1.35;
-	text-align: center;
-}
-.blockquote p {
-	margin: 20px 70px 16px;
-	font-size: 22px;
-	letter-spacing: .05em;
-	line-height: 1.4;
-	padding: 20px 0 0 20px;
+	p {
+		margin: 20px 70px 16px;
+		font-size: 22px;
+		letter-spacing: .05em;
+		line-height: 1.4;
+		padding: 20px 0 0 20px;
+	}
+	cite{
+		margin-left: 70px;
+		font-style: italic;
+		padding-left: 20px;
+	}
+	&:before {
+		content: "\201C";
+		font-family: serif;
+		position: absolute;
+		left: 20px;
+		top: 20px;
+		color: white;
+		background: gray;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		font-size: 50px;
+		line-height: 1.35;
+		text-align: center;
+	}
 }
 
-.blockquote cite{
-	margin-left: 70px;
-	font-style: italic;
-	padding-left: 20px;
-}
-
-
-
-/*c сайта доброго стиля*/
 .clients-wrapper {
 	padding: 1em 0;
 	/* hide horizontal scrollbar on IE11 */
 	overflow-x: hidden;
+	h1 { 
+		font-size: 2.5em;
+		text-align: center;
+		color: 	#505050 ;
+		padding-bottom: 20px;
+	} 
+	img {
+		margin: 1em;
+	}
+	section p {
+		padding: 10px 0 0 0;
+	}
 }
-
-.clients-wrapper h1{ 
-	font-size: 2.5em;
-	text-align: center;
-	color: 	#505050 ;
-	padding-bottom: 20px;
-} 
-
-.clients-wrapper img {
-	margin: 1em;
-}
-
-.clients-wrapper section p {
-	padding: 10px 0 0 0;
-}
-
-
-
 
 .about-wrapper {
 	background: #565656;
@@ -200,20 +184,17 @@ html, body {
 	/* hide horizontal scrollbar on IE11 */
 	overflow-x: hidden;
 	box-shadow: 0 5px 10px -1px rgba(0, 0, 0, 0.5);
-}
-
-.about-wrapper h1{ 
-	font-size: 2.5em;
-	text-align: center;
-	padding-bottom: 20px;
-} 
-
-.about-wrapper img {
-	margin: 1em;
-}
-
-.about-wrapper section p {
-	padding: 10px 0 0 0;
+	h1 { 
+		font-size: 2.5em;
+		text-align: center;
+		padding-bottom: 20px;
+	} 
+	img {
+		margin: 1em;
+	}
+	section p {
+		padding: 10px 0 0 0;
+	}
 }
 
 
@@ -225,11 +206,11 @@ html, body {
 	/* hide horizontal scrollbar on IE11 */
 	overflow-x: hidden;
 	box-shadow: 0 5px 10px -1px rgba(0, 0, 0, 0.5);
-} 
-.form-wrapper h1{ 
-	font-size: 2.5em;
-	text-align: center;
-	padding-bottom: 20px;
+	h1 { 
+		font-size: 2.5em;
+		text-align: center;
+		padding-bottom: 20px;
+	} 
 } 
 
 
