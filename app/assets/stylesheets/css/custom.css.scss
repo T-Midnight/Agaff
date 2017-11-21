@@ -65,14 +65,23 @@ html, body {
 	color: black; 
 	text-align: center;
 	margin: 70px 20px 20px 20px;
-
-
 }
+
+.Digital:hover {
+	color: gray; 
+	text-decoration: none;
+}
+
 .Web {
 	font-size: 80px;
 	color: white; 
 	text-align:center;
 	margin: 70px 20px 20px 20px;
+}
+
+.Web:hover {
+	color: gray; 
+	text-decoration: none;
 }
 
 #map {
