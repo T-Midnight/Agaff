@@ -2,4 +2,20 @@
 	<h1>
 		ОСТАВИТЬ ЗАЯВКУ
 	</h1>
+	<%= form_for(@user, url: user_index_path) do |f| %>
+
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+
+	    <%= f.label :phone %>
+        <%= f.password_field :phone%>
+
+        <%= f.label :email %>
+        <%= f.text_field :email %>
+
+        <%= f.label :text %>
+        <%= f.password_field :text %>
+
+        <%= f.submit "Отправить заявку", class: "btn btn-large btn-primary" %>
+    <% end %>
 </div>
