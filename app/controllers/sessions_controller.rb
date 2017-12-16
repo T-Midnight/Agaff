@@ -10,7 +10,7 @@ class SessionsController < ApplicationController
   def create
     @session_form = User.find_by email: params[:user][:email]
     if @session_form.authenticate params[:user][:password]
-      sign_in @session_form
+      sign_in @session_form.email
       redirect_to actual_path
     else
       render :new

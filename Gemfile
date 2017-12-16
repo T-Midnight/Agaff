@@ -19,6 +19,7 @@ gem 'pg'
 gem 'bcrypt'
 gem 'haml-rails'
 gem 'simple_form'
+gem 'enumerize'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

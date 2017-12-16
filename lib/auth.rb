@@ -21,7 +21,7 @@ module Auth
   end
 
   def current_user
-    @_current_user ||= User.find_by login: cookies[:username]
+    @_current_user ||= User.find_by email: cookies[:username]
   end
 
   def redirect_role_path(user)
@@ -35,8 +35,9 @@ module Auth
 
   def authenticate_admin!
     if signed_in?
-      user = User.find_by login: cookies[:username]
-      render_404 if user.role.developer?
+      binding.pry
+      user = User.find_by email: cookies[:username]
+      redirect_to root_path unless user.role.admin?
     else
       redirect_to new_session_path(from: request.path)
     end
