@@ -4,14 +4,13 @@ class SessionsController < ApplicationController
   before_action :redirect_if_signed_in, except: :destroy
 
   def new
-    @session_form = SessionForm.new User.new
-    @from = params[:url]
+    @session_form = User.new
   end
 
   def create
-    @session_form = SessionForm.new User.find_or_initialize_by login: params[:session][:login]
-    if @session_form.validate params[:session]
-      sign_in @session_form.model.login
+    @session_form = User.find email: params[:session][:email]
+    if @session_form.authenticate params[:session][:password]
+      sign_in @session_form
       redirect_to actual_path
     else
       render :new

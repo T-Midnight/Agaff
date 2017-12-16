@@ -1,0 +1,10 @@
+ru:
+  helpers:
+    mine: Мои
+    links:
+      actions: Действия
+      enter: Войти
+      sign_out: Выйти
+      add: Добавить
+      remove: Удалить
+      profile: Профиль
