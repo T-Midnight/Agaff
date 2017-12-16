@@ -1,0 +1,268 @@
+.container-fluid
+  .row.header
+    .col-lg-4.col-md-4.col-sm-4.col-xs-12
+      = image_tag('logo_min(1).png', alt: 'Logo')
+    .col-lg-4.col-md-4.col-sm-4.col-xs-12
+      %p.lid
+        МЫ СДЕЛАЕМ ВАМ КРАСИВО
+    .col-lg-4.col-md-4.col-sm-4.col-xs-12
+      %p.phones
+        75 71 78
+        %br/
+        8 (927) 631 57 87
+.container-fluid
+  .row
+    .col-lg-6.col-md-6.col-sm-6.col-xs-12.class1
+      %p.Web{:span => ""} WEB
+    .col-lg-6.col-md-6.col-sm-6.col-xs-12.class2
+      %p.Digital{:span => ""} DIGITAL
+.container-fluid
+  .row.quote
+    .col-lg-4.col-md-4.col-sm-4.col-xs-12.img-responsive.photo
+      = image_tag('Andrew.jpg', alt: 'Andrew Agapov')
+    .col-lg-8.col-md-8.col-sm-8.col-xs-12.ter
+      .blockquote
+        %p
+          ТЕОРИЯ — ЭТО КОГДА ВЫ ЗНАЕТЕ ВСЁ, НО НИЧЕГО НЕ РАБОТАЕТ. ПРАКТИКА - ЭТО КОГДА ВСЕ РАБОТАЕТ, НО НИКТО НЕ ЗНАЕТ ПОЧЕМУ. МЫ СОВМЕЩАЕМ ТЕОРИЮ И ПРАКТИКУ - НИЧЕГО НЕ РАБОТАЕТ И НИКТО НЕ ЗНАЕТ ПОЧЕМУ.
+        %cite — Андрей Агапов
+#company.about-wrapper
+  %h1
+    НАША КОМПАНИЯ
+  .container
+    %article.col-lg-3.col-md-3.col-sm-6.col-xs-12
+      = image_tag('Gazprom.svg', alt: 'Газпром')
+      %p
+        Высококвалифицированная команда и новейшие технологии позволяют нам создавать мебель в кратчайшие сроки.
+      %p
+    %article.col-lg-3.col-md-3.col-sm-6.col-xs-12
+      = image_tag('Gazprom.svg', alt: 'Kinder')
+      %p
+        Инновационный дизайн мебели Фабрики «Добрый стиль» удостоен дипломов Всероссийских и международных выставок и конкурсов.
+      %p
+    %article.col-lg-3.col-md-3.col-sm-6.col-xs-12
+      = image_tag('Gazprom.svg', alt: 'Nutella')
+      %p
+        Высококвалифицированная команда и новейшие технологии позволяют нам создавать мебель в кратчайшие сроки.
+      %p
+    %article.col-lg-3.col-md-3.col-sm-6.col-xs-12
+      = image_tag('Gazprom.svg', alt: 'Sony')
+      %p
+        Инновационный дизайн мебели Фабрики «Добрый стиль» удостоен дипломов Всероссийских и международных выставок и конкурсов.
+      %p
+#form.form-wrapper
+  %h1
+    ОСТАВИТЬ ЗАЯВКУ
+#clients.clients-wrapper
+  %h1
+    НАШИ КЛИЕНТЫ
+  .container
+    .row
+      .col-lg-6.col-md-6.col-sm-6.col-xs-12
+        %article.col-lg-3.col-md-3.col-sm-3.col-xs-12.img-responsive
+          = image_tag('kinder.jpg', alt: 'Kinder')
+        %article.col-lg-3.col-md-3.col-sm-3.col-xs-12.img-responsive
+          = image_tag('gulliver.jpg', alt: 'Gulliver')
+        %article.col-lg-3.col-md-3.col-sm-3.col-xs-12.img-responsive
+          = image_tag('Gazprom.svg', alt: 'Gazprom')
+        %article.col-lg-3.col-md-3.col-sm-3.col-xs-12.img-responsive
+          = image_tag('volga_dnepr.png', alt: 'Волга-Днепр')
+      .col-lg-5.col-md-5.col-sm-5.col-xs-12
+        %article.col-lg-3.col-md-3.col-sm-3.col-xs-12.img-responsive
+          = image_tag('akva.jpg', alt: 'Аквамолл')
+        %article.col-lg-3.col-md-3.col-sm-3.col-xs-12.img-responsive
+          = image_tag('dobryi_stil.png', alt: 'Добрый стиль')
+        %article.col-lg-3.col-md-3.col-sm-3.col-xs-12.img-responsive
+          = image_tag('dvery.jpg', alt: 'Александрийские двери')
+        %article.col-lg-3.col-md-3.col-sm-3.col-xs-12.img-responsive
+          = image_tag('just.jpg', alt: 'Just.ru')
+.container-fluid
+  #map
+    :javascript
+      function initMap() {
+        var coordinates = {lat: 54.3818383, lng: 48.603934};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 13,
+          center: coordinates,
+          styles: [
+          {
+            "elementType": "geometry",
+            "stylers": [
+            {
+              "color": "#242f3e"
+            }
+            ]
+          },
+          {
+            "elementType": "labels.text.fill",
+            "stylers": [
+            {
+              "color": "#746855"
+            }
+            ]
+          },
+          {
+            "elementType": "labels.text.stroke",
+            "stylers": [
+            {
+              "color": "#242f3e"
+            }
+            ]
+          },
+          {
+            "featureType": "administrative.locality",
+            "elementType": "labels.text.fill",
+            "stylers": [
+            {
+              "color": "#d59563"
+            }
+            ]
+          },
+          {
+            "featureType": "poi",
+            "elementType": "labels.text.fill",
+            "stylers": [
+            {
+              "color": "#d59563"
+            }
+            ]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "geometry",
+            "stylers": [
+            {
+              "color": "#263c3f"
+            }
+            ]
+          },
+          {
+            "featureType": "poi.park",
+            "elementType": "labels.text.fill",
+            "stylers": [
+            {
+              "color": "#6b9a76"
+            }
+            ]
+          },
+          {
+            "featureType": "road",
+            "elementType": "geometry",
+            "stylers": [
+            {
+              "color": "#38414e"
+            }
+            ]
+          },
+          {
+            "featureType": "road",
+            "elementType": "geometry.stroke",
+            "stylers": [
+            {
+              "color": "#212a37"
+            }
+            ]
+          },
+          {
+            "featureType": "road",
+            "elementType": "labels.text.fill",
+            "stylers": [
+            {
+              "color": "#9ca5b3"
+            }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "geometry",
+            "stylers": [
+            {
+              "color": "#746855"
+            }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "geometry.stroke",
+            "stylers": [
+            {
+              "color": "#1f2835"
+            }
+            ]
+          },
+          {
+            "featureType": "road.highway",
+            "elementType": "labels.text.fill",
+            "stylers": [
+            {
+              "color": "#f3d19c"
+            }
+            ]
+          },
+          {
+            "featureType": "transit",
+            "elementType": "geometry",
+            "stylers": [
+            {
+              "color": "#2f3948"
+            }
+            ]
+          },
+          {
+            "featureType": "transit.station",
+            "elementType": "labels.text.fill",
+            "stylers": [
+            {
+              "color": "#d59563"
+            }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "geometry",
+            "stylers": [
+            {
+              "color": "#17263c"
+            }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "labels.text.fill",
+            "stylers": [
+            {
+              "color": "#515c6d"
+            }
+            ]
+          },
+          {
+            "featureType": "water",
+            "elementType": "labels.text.stroke",
+            "stylers": [
+            {
+              "color": "#17263c"
+            }
+            ]
+          }
+          ]
+        });
+        var marker = new google.maps.Marker({
+          position: coordinates,
+          map: map
+        });    
+      }
+    %script{:async => "", :defer => "defer", :src => "https://maps.googleapis.com/maps/api/js?key=AIzaSyB_l7KHRj8SKlF9VcH7nPe_4UXA2xW61RI&language=ru&region=RU&callback=initMap"}
+      :cdata
+.container-fluid
+  .footer.row
+    .col-lg-4.col-md-4.col-sm-4.col-xs-12
+      %p.copyright © 2013-2017 «Agapoff Studio»
+    .col-lg-4.col-md-4.col-sm-4.col-xs-12.logo.img-responsive
+      = image_tag('logo_min(1).png', alt: 'Logo')
+    .col-lg-4.col-md-4.col-sm-4.col-xs-12
+      .row.widgets.col-lg-12.col-md-12.col-sm-12.col-xs-12
+        %a.instagram_icon{:href => "https://www.instagram.com/agapoffstudio/", :target => "_blank"}
+          = image_tag('insta resize.png', alt: 'Instagram')
+        %a.vk_icon{:href => "https://vk.com/agapoffstudio", :target => "_blank"}
+          = image_tag('vk resize.png', alt: 'VKontakte')
+        %a.pinterest_icon{:href => "https://www.behance.net/AndrewAgapoff", :target => "_blank"}
+          = image_tag('Behance resize.png', alt: 'Behance')
